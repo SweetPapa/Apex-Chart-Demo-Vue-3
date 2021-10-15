@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="bg-secondary text-black">
         <q-btn
           flat
           dense
@@ -11,13 +11,13 @@
           @click="toggleLeftDrawer()"
         />
 
-        <q-toolbar-title> SweetPapa's Apex Chart Demo </q-toolbar-title>
+        <q-toolbar-title>Vue Apex Chart Demo </q-toolbar-title>
 
         <div>Built with Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" bordered>
+    <q-drawer v-model="leftDrawerOpen" bordered class="bg-white">
       <img
         class="q-pa-sm q-mt-md"
         alt="SPC logo"
@@ -55,6 +55,12 @@ const linksList = [
     title: "Chart Dashboard",
     caption: "Demo of Apex Charts",
     icon: "graph",
+    link: "/dashboard",
+  },
+  {
+    title: "Credits",
+    caption: "Tools I Used to Build This Site",
+    icon: "graph",
     link: "/",
   },
 ];
@@ -83,3 +89,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+.bgColor {
+  background-color: black;
+}
+</style>

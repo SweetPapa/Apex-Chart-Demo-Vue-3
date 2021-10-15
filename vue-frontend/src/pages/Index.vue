@@ -10,7 +10,7 @@
           style="width: 50vw; height: auto; max-width: 500px; user-drag: none; -moz-user-select: none; -webkit-user-drag: none;
 "
         />
-        <div class="col text-h1 text-white">Apex Charts Demo</div>
+        <div class="col text-h2 text-white">Apex Charts Demo</div>
         <div class="col text-h5 text-white">by Forrester Terry <a class="text-blue text-h6" style="text-decoration:none;" href="https://github.com/SweetPapa">(@SweetPapa)</a></div>
 
         </center>

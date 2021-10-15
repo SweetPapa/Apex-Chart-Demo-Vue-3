@@ -5,4 +5,12 @@ This project is a WIP
 
 Will update ReadME once everything is done =) 
 
-- SweetPapa
+SweetPapa
+
+## Credits:
+
+Logo Made With:
+https://spark.adobe.com/express-apps/logo-maker/results 
+
+Backgrounds Taken From:
+https://www.pixeltrue.com/scenic-illustrations
