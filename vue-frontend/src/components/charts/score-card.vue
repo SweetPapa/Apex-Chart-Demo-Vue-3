@@ -1,13 +1,13 @@
 <template>
-  <q-card style="min-width: 250px">
+  <q-card style="min-width: 150px">
     <q-card-section
       :style="{ 'background-color': cardColor || '#FFFFFF' }"
     >
-      <div class="q-ma-md flex" style="min-width: 100%">
-        <q-icon class="col text-white" size="4em" :name="cardLogo || 'fas fa-laptop'" />
-        <div class="col">
-          <div class="text-white text-bold text-h3">{{ textValue || "" }}</div>
-          <div class="text-h6 q-pl-sm" >{{ textLabel || "" }}</div>
+      <div class="q-pa-sm flex" style="min-width: 100%">
+        <q-icon class="col text-white" size="3em" :name="cardLogo || 'fas fa-laptop'" />
+        <div class="col q-mr-sm" >
+          <div class="text-white text-bold text-h4">{{ textValue || "" }}</div>
+          <div class="text-h6" >{{ textLabel || "" }}</div>
         </div>
       </div>
     </q-card-section>
