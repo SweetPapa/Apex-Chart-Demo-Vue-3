@@ -14,3 +14,6 @@ https://spark.adobe.com/express-apps/logo-maker/results
 
 Backgrounds Taken From:
 https://www.pixeltrue.com/scenic-illustrations
+
+Dashboard Design / Theme Inspiration:
+https://www.idashboards.com/dashboard-examples/transportation-logistics-dashboard-fleet-management/
