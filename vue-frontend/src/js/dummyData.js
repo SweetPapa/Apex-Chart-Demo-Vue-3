@@ -8,19 +8,22 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
   }
 
+// Some colors to keep things in theme
+const randomColors = ["#336699", "#86bbd8", "#2f4858", "#9ee493", "#daf7dc"]
+
 // Our main object for the chart data
 const chartData = {
     scorecard : [
             {
             textLabel : "Windows",
-            textScore : 321,
+            textScore : 1321,
             cardColor : "",
             logoTag: "fab fa-windows"
             },
            
             {
                 textLabel : "macOS",
-                textScore : 50,
+                textScore : 1151,
                 cardColor : "",
                 logoTag: "fab fa-apple"
             },
@@ -36,13 +39,14 @@ const chartData = {
                 cardColor : "",
                 logoTag: "fas fa-mobile"
             }
-    ]
-    
+    ],
+    piechart : {
+        options: {labels: ["Windows", "macOS", "Android", "iOS"],
+        colors: randomColors
+        },
+        series: [1321, 1151, 1335, 5236]
+      } 
 }
-
-// Some colors to keep things in theme
-const randomColors = ["#336699", "#86bbd8", "#2f4858", "#9ee493", "#daf7dc"]
-
 
 // Assign some random colors to the dummy data
 const assignRandomColors = (data) => {
@@ -58,7 +62,6 @@ const assignRandomColors = (data) => {
 
 // Assign the Random Colors for the Scorecard
 assignRandomColors(chartData.scorecard)
-
 
 // We'll export all the stuff we care about
 module.exports = {

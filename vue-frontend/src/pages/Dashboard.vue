@@ -1,7 +1,8 @@
 <template>
-  <q-page class="bg-image">
-    <div class="">
-      <div class="row q-pa-xl" style="min-width: 100%;">
+  <q-page>
+    <div>
+      <!-- Score Cards -->
+      <div class="row q-pa-xl" style="min-width: 100%">
         <score-card
           class="q-ma-md col"
           v-for="scorecard in chartData.scorecard"
@@ -12,56 +13,39 @@
           :cardLogo="scorecard.logoTag"
         />
       </div>
-      <div class="row q-pa-xl"></div>
-      <div class="row q-pa-xl"></div>
-      <div class="row">
-        <div>Example Bar Chart</div>
+
+      <!-- Donut Chart -->
+      <div class="row q-pa-xl">
         <apexchart
-          width="500"
-          type="bar"
-          :options="options"
-          :series="series"
+          width="325"
+          type="donut"
+          :options="chartData.piechart.options"
+          :series="chartData.piechart.series"
+          :labels="chartData.piechart.labels"
         ></apexchart>
       </div>
+      <div class="row q-pa-xl"></div>
     </div>
   </q-page>
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
-import scoreCard from "../components/charts/score-card.vue";
+import { defineComponent } from "vue";
 import { chartData } from "../js/dummyData";
+import scoreCard from "../components/charts/score-card.vue";
 
 export default defineComponent({
-  name: "PageIndex",
+  name: "Dashboard",
   setup() {
     return {
-      chartData,
-      options: {
-        chart: {
-          id: "vuechart-example",
-        },
-        xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
-        },
-      },
-      series: [
-        {
-          name: "series-1",
-          data: [30, 40, 45, 50, 49, 60, 70, 91],
-        },
-      ],
+      chartData
     };
   },
   components: {
-    scoreCard,
-  },
-  created() {
-    // Populate the score cards
-  },
+    scoreCard
+  }
 });
 </script>
+
 <style lang="scss" scoped>
-.bg-image {
-}
 </style>

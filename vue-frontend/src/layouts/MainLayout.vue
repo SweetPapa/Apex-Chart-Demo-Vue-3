@@ -11,7 +11,7 @@
           @click="toggleLeftDrawer()"
         />
 
-        <q-toolbar-title>Vue Apex Chart Demo </q-toolbar-title>
+        <q-toolbar-title>Vue Demo </q-toolbar-title>
 
         <div>Built with Quasar v{{ $q.version }}</div>
       </q-toolbar>

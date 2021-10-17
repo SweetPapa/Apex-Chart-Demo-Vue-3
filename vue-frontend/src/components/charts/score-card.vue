@@ -25,7 +25,7 @@ export default defineComponent({
   props: {
     cardColor: String,
     textLabel: String,
-    textValue: String,
+    textValue: String || Number,
     cardLogo: String,
   },
 });
